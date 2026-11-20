@@ -27,7 +27,13 @@
 
 **Final Robot Demonstration**
 
-https://github.com/user-attachments/assets/48b1dec5-cbc4-494a-885c-afe4893c26c6
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/48b1dec5-cbc4-494a-885c-afe4893c26c6">
+    <img src="media/photos/robot-with-controller.png" alt="Click to watch the demo" width="700">
+  </a>
+</p>
+
+<p align="center"><em>▶ Click the image to watch the full demonstration</em></p>
 
 This project is an upgraded version of my original wireless RC car, redesigned around an ESP32 microcontroller and a four-wheel-drive drivetrain.
  
