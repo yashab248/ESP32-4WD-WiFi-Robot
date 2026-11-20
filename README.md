@@ -2,7 +2,8 @@
 
 \<p align="center">   \<strong>A custom-built four-wheel-drive robotic vehicle featuring ESP32 wireless communication, browser-based control, differential steering, and embedded motor-control algorithms.\</strong> \</p>
 
-\<p align="center">   \<img src="media/photos/final-robot.jpg" alt="ESP32 4WD Robot" width="600"> \</p>
+\<p align="center">   \<img width="1002" height="747" alt="image" src="https://github.com/user-attachments/assets/4b70befb-a5ba-4cce-95fb-e77d828aff7f" />
+\</p>
 
 \<p align="center">   \<em>Four-wheel drive. Wireless control. Custom embedded software.\</em> \</p>
 
