@@ -1,18 +1,26 @@
 # ESP32 4WD Wi-Fi Controlled Robot 🚗
- 
-<p align="center">
-  <img src="media/photos/robot-with-controller.png" alt="ESP32 4WD robot next to a tablet running the browser-based Rover Control Center" width="800">
-</p>
 
 <p align="center">
-  <img src="media/photos/electronics-top-view.png" alt="ESP32 4WD robot next to a tablet running the browser-based Rover Control Center" width="800">
-</p>
-
-<p align="center">
-  <img src="media/controller-screenshots/controller-interface.png" alt="ESP32 4WD robot next to a tablet running the browser-based Rover Control Center" width="800">
+  <img src="media/photos/robot-with-controller.png" alt="ESP32 4WD robot next to a tablet running the Rover Control Center" width="800">
 </p>
 
 <p align="center"><em>The finished robot beside the browser-based controller it hosts on its own Wi-Fi network.</em></p>
+
+<table align="center">
+  <tr>
+    <td align="center" valign="middle" width="50%">
+      <img src="media/photos/electronics-top-view.png" alt="Top-down view of the robot's breadboard wiring" width="100%">
+    </td>
+    <td align="center" valign="middle" width="50%">
+      <img src="media/controller-screenshots/controller-interface.png" alt="Rover Control Center browser interface" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><em>Electronics and wiring</em></td>
+    <td align="center"><em>Browser-based controller</em></td>
+  </tr>
+</table>
+
 ---
  
 # 🎥 Project Demonstration
