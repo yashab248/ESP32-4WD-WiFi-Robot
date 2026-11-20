@@ -190,14 +190,14 @@ The following components were used to construct the robot.
 | Component                                  |    Quantity | Function                    |
 | ------------------------------------------ | ----------: | --------------------------- |
 | ESP32 DevKit V1                            |           1 | Main microcontroller        |
-| TB6612FNG Motor Driver                     |           2 | Dual H-bridge motor control |
+| TB6612FNG Motor Driver                     |           1 | Dual H-bridge motor control |
 | TT Geared DC Motors (3–6 V, 200 RPM, 1:48) |           4 | Vehicle propulsion          |
 | Robot chassis                              |           1 | Mechanical structure        |
 | Wheels                                     |           4 | Ground contact and movement |
 | Red LED                                    |           1 | Status indication           |
 | Blue LED                                   |           1 | Status indication           |
 | Yellow LED                                 |           1 | Status indication           |
-| Battery                                    |           1 | Electrical power source     |
+| 7.4 LiPo Battery                           |           1 | Electrical power source     |
 | Connecting wires                           | As required | Electrical connections      |
 
 *The exact battery specifications and final power-distribution configuration should be documented alongside the wiring diagram.*
