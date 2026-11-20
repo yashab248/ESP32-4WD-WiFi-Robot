@@ -26,11 +26,9 @@
 # 🎥 Project Demonstration
  
 > **Final Robot Demonstration**
- 
-[WATCH THE FULL ROBOT DEMONSTRATION →](#)
- 
-### What You're Looking At
- 
+
+https://github.com/user-attachments/assets/48b1dec5-cbc4-494a-885c-afe4893c26c6
+
 This project is an upgraded version of my original wireless RC car, redesigned around an ESP32 microcontroller and a four-wheel-drive drivetrain.
  
 Instead of using a dedicated wireless transmitter and receiver, the robot hosts its own Wi-Fi network and embedded web server. This allows it to be controlled directly from a phone, tablet, or computer through a browser.
@@ -39,7 +37,7 @@ The final system combines:
  
 - ESP32-based embedded control
 - Four-wheel-drive propulsion
-- Dual TB6612FNG motor drivers
+- TB6612FNG motor driver
 - Four geared DC motors
 - Wi-Fi communication through an ESP32 access point
 - Custom HTML, CSS, and JavaScript controller
@@ -65,7 +63,7 @@ The project focuses on integrating several engineering disciplines:
  
 - Embedded systems programming
 - DC motor control
-- H-bridge motor drivers
+- H-bridge motor driver
 - PWM speed regulation
 - Wi-Fi communication
 - HTTP-based command processing
@@ -97,7 +95,7 @@ The main change was moving from a mechanically steered RC car to a differential-
 | Wireless communication | nRF24L01                          | Built-in Wi-Fi                 |
 | Control interface      | Physical joystick                 | Browser-based controller       |
 | Motor configuration    | Single propulsion motor           | Four DC motors                 |
-| Motor drivers          | TB6612FNG                         | 2 × TB6612FNG                  |
+| Motor drivers          | TB6612FNG                         | TB6612FNG                      |
 | Steering               | Servo + Ackermann geometry        | Differential steering          |
 | Turning                | Mechanical front-wheel steering   | Left/right motor speed control |
 | Speed control          | PWM                               | Adjustable PWM                 |
@@ -227,7 +225,11 @@ Its responsibilities include:
 - Activating the motor-stop failsafe.
 ## 2. TB6612FNG Motor Drivers
  
-Two TB6612FNG motor drivers are used to control the four DC motors.
+One TB6612FNG motor driver is used to control the four DC motors by connecting the motor's positive and negative terminals across two output pins.
+
+Therefore, the left-side motors are connected to the output A on the motor driver, and vice versa for the right-side motors on output B.
+
+By connecting them in parallel, you get a shared signal between the left and right motors, thus reducing the use for 2 motor drivers, and separate digital / analog signals to be sent.
  
 The TB6612FNG is a dual H-bridge motor driver, meaning each driver provides two bidirectional motor-control channels.
  
@@ -282,6 +284,12 @@ Three LEDs are connected to the ESP32:
 These outputs provide visual indications of the robot's operating state.
  
 The firmware uses different output combinations for stopped, driving, and pivot-turning conditions.
+
+All lights flash on when the car enters the braking state.
+
+Only the Yellow LED stays on when you are rotating on the spot.
+
+Only the Blue LED stays on when you are moving forwards or backwards, regardless whether you are driving straight or swerving
  
 ---
  
@@ -303,27 +311,6 @@ The following pin assignments are used in the current firmware.
 | GPIO 25    | Blue LED   | Status indication     |
 | GPIO 33    | Yellow LED | Status indication     |
  
-### Motor Driver Connections
- 
-The motor-control signals are shared across the corresponding motor-driver channels so that the front and rear motors on each side operate together.
- 
-The resulting control arrangement is:
- 
-```text
-                 ESP32
-                   |
-          MOTOR CONTROL SIGNALS
-                   |
-           -----------------
-           |               |
-       TB6612 #1       TB6612 #2
-           |               |
-       Rear Motors      Front Motors
-           |               |
-       Left + Right     Left + Right
-```
- 
-The exact channel-to-motor wiring and output polarity should be shown in the final electrical schematic.
  
 ### Standby Connection
  
