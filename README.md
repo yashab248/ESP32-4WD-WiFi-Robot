@@ -3,6 +3,15 @@
 <p align="center">
   <img src="media/photos/robot-with-controller.png" alt="ESP32 4WD robot next to a tablet running the browser-based Rover Control Center" width="800">
 </p>
+
+<p align="center">
+  <img src="media/photos/electronics-top-view.png" alt="ESP32 4WD robot next to a tablet running the browser-based Rover Control Center" width="800">
+</p>
+
+<p align="center">
+  <img src="media/controller-screenshots/controller-interface.png" alt="ESP32 4WD robot next to a tablet running the browser-based Rover Control Center" width="800">
+</p>
+
 <p align="center"><em>The finished robot beside the browser-based controller it hosts on its own Wi-Fi network.</em></p>
 ---
  
