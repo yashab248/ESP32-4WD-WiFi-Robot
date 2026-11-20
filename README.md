@@ -29,8 +29,6 @@
  
 [WATCH THE FULL ROBOT DEMONSTRATION →](#)
  
-*Add your YouTube demonstration link here.*
- 
 ### What You're Looking At
  
 This project is an upgraded version of my original wireless RC car, redesigned around an ESP32 microcontroller and a four-wheel-drive drivetrain.
