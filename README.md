@@ -24,10 +24,14 @@
 ---
  
 # 🎥 Project Demonstration
- 
+
 > **Final Robot Demonstration**
 
-https://github.com/user-attachments/assets/48b1dec5-cbc4-494a-885c-afe4893c26c6
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/48b1dec5-cbc4-494a-885c-afe4893c26c6" controls width="800"></video>
+</p>
+
+<p align="center"><em>Full demonstration of the robot driving through the Wi-Fi controller.</em></p>
 
 This project is an upgraded version of my original wireless RC car, redesigned around an ESP32 microcontroller and a four-wheel-drive drivetrain.
  
